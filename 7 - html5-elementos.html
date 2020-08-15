@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novos elementos</title>
+</head>
+<body>
+  
+  <header> 
+    Representa o conteúdo inicial da página. Costuma ser a parte superior do 
+    site, onde está o cabeçalho principal ou uma navegação introdutória
+  </header>
+  
+  <nav>Representa a área de navegação do site</nav>
+
+  <aside>representa uma área complementar relacionada ao conteúdo principal.</nav>
+
+  <main> 
+    Aninha os demais conteúdos da página. Costuma vir logo após o elemento header 
+  </main>
+  
+  <section>
+    Representa uma sessão genérica do documento ou da aplicação. Costuma ser a 
+    parte central do website 
+  </section>
+
+  <article>
+    Representa uma composição da página. Pode ser um post de blog, uma notícia,
+    um widget, etc.
+  </article>
+
+  <footer>Representa o conteúdo de um rodapé da página</footer>
+  
+</body>
+</html>
+
+
+<!--
+
+  Com esses novos elementos, os navegadores e a tecnologia assistiva podem fazer
+  uso dessas marcações semânticas para dar significado às áreas do site. 
+  Com um simples atalho de teclado, é possível saltar pelas áreas, indo direto 
+  para a navegação, o conteúdo principal, o rodapé, etc.
+
+  No início de 2016, os principais leitores de tela começaram a suportar as 
+  principais marcações semânticas da HTML5. Porém, alguns deles ainda não 
+  suportam todos os novos elementos. 
+  
+  Para que eles funcionem plenamente até que sejam implementados os principais 
+  elementos semânticos, podemos inserir alguns atributos de WAI-ARIA, chamados
+  landmarks, que servem para fazer a marcação de áreas do site. Sendo assim, 
+  os novos elementos podem conter os seguintes atributos:
+
+  <header role=”banner”>
+  <section role=”main”>
+  <nav role=”navigation”>
+  <aside role=”complementary”>
+  <footer role=”contentinfo”>
+
+  Importante: adicionamos role=“main” ao elemento <section> pois é
+  onde efetivamente começa o conteúdo principal (e não no elemento <main>).
+  
+  Outras marcações:
+  Campos de pesquisa role="search"
+  Qualquer outro tipo de campo role="form"
+
+  No NDVA, para navegar entre os landmarks, basta pressionar a tecla D para ir 
+  ao próximo landmark e Shift+D para ir ao anterior.
+
+-->
