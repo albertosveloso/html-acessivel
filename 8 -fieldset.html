@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fieldset</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Endereço Residencial</legend>
+    <label for=”rua-res”>Rua </label><input type=”text”
+    id=”rua-res” name=”rua-res”>
+    
+  </fieldset>
+    
+  <fieldset>
+    <legend>Endereço Comercial</legend>
+    <label for=”rua-com”>Rua </label><input type=”text”
+    id=”rua-com” name=”rua-com”>
+  </fieldset>
+  
+</body>
+</html>
+
+
+<!--
+
+  Com esses novos elementos, os navegadores e a tecnologia assistiva podem fazer
+  uso dessas marcações semânticas para dar significado às áreas do site. 
+  Com um simples atalho de teclado, é possível saltar pelas áreas, indo direto 
+  para a navegação, o conteúdo principal, o rodapé, etc.
+
+  No início de 2016, os principais leitores de tela começaram a suportar as 
+  principais marcações semânticas da HTML5. Porém, alguns deles ainda não 
+  suportam todos os novos elementos. 
+  
+  Para que eles funcionem plenamente até que sejam implementados os principais 
+  elementos semânticos, podemos inserir alguns atributos de WAI-ARIA, chamados
+  landmarks, que servem para fazer a marcação de áreas do site. Sendo assim, 
+  os novos elementos podem conter os seguintes atributos:
+
+  <header role=”banner”>
+  <section role=”main”>
+  <nav role=”navigation”>
+  <aside role=”complementary”>
+  <footer role=”contentinfo”>
+
+  Importante: adicionamos role=“main” ao elemento <section> pois é
+  onde efetivamente começa o conteúdo principal (e não no elemento <main>).
+  
+  Outras marcações:
+  Campos de pesquisa role="search"
+  Qualquer outro tipo de campo role="form"
+
+  No NDVA, para navegar entre os landmarks, basta pressionar a tecla D para ir 
+  ao próximo landmark e Shift+D para ir ao anterior.
+
+-->
